@@ -23,11 +23,11 @@ void eliminarPila(Nodo *&, int &);  //de función.
 int main(){
 
 	Nodo *pila=NULL; //igualar pila a un valor vacío. 
-	int dato;
+	int dato, num=0;
 	
 	cout<<"digite un número para apilar: "<<endl;
 	cin>>dato;
-
+	agregarPila(pila, dato);
 	
 	cout<<"digite otro número para apilar: "<<endl;
 	cin>>dato;
@@ -39,10 +39,10 @@ int main(){
 	cout<<"Sacando los elementos de la pila: ";
 	
 	
-	while (pila != NULL)//Mientras no sea el final...
+	while (num<2)//Mientras no sea el final...
 	{
   
-	
+	num++;
 		if (pila != NULL){//hay más elementos
 	
 				eliminarPila(pila, dato);

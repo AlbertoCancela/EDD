@@ -69,9 +69,12 @@ int main(){
  	cout<<n<<" agregado correctamente a la pila"<<endl;
  }
  
- void eliminarPila(Nodo *& pila, int &n){ //Eliminar Datos
+ void eliminarPila(Nodo *& pila, int &n){ //Eliminar Datos 
+   
  	Nodo *aux=pila;//1. Crear una variable *aux de tipo Nodo
  	n = aux ->dato;//2. Igualar el n a aux->dato
  	pila = aux ->siguiente;//3. Pasar pila a siguiente nodo
+for (int i=0; i>1; i++){
  	delete aux; //4. Eliminar aux*/
+ }
  }
